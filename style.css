@@ -1,0 +1,319 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 40px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 85%;
+ 
+}
+
+h1 {
+  text-align: center;  
+}
+
+h2 {
+    margin-bottom: .5em;
+    color: #594545;
+}
+
+h4 {
+    color: #594545;
+}
+
+p.businessCard {
+    margin-top: 2em !important;
+}
+
+input {
+  padding: 10px;
+  /* margin: 5px 10px; */
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+select {
+    padding: 10px;
+    /* margin: 5px 10px; */
+    width: 100%;
+    font-size: 15px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+    opacity: .7;
+}
+
+label {
+    font-size: 15px;
+}
+
+
+.form-control {
+    width: 100% !important;
+    font-size: 15px;
+}
+
+.form-control:focus {
+    border-color: #EFECEA;
+    box-shadow: inset 0 1px 1px rgba(239,236,234), 0 0 8px rgba(239,236,234);
+  }
+
+.inputRadio {
+    width: auto;
+}
+
+.inputRadioFont {
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #F5EFE6;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #A2936F;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+.nextPrev {
+    float: right;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #A2936F;
+}
+
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+
+
+
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    input {
+        width: 100%;
+    }
+    select {
+        width: 100%;
+    }
+
+    .form-control {
+        width: 100% !important;
+    }
+
+    #regForm {
+        text-align: center;
+    }
+
+    .nextPrev {
+        position: relative;
+        right: 18%;
+
+
+    }
+
+    .inputRadioFont {
+        padding-left: 0 !important;
+    }
+
+    
+}
+
+@media only screen and (max-width: 500px) {
+    input {
+        font-size: 11px !important;
+    }
+
+    select {
+        font-size: 11px;
+    }
+
+    label {
+        font-size: 11px;
+    }
+
+    .inputRadioFont {
+        font-size: 13px;
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    /* Make circles that indicate the steps of the form: */
+    .step {
+        height: 7px;
+        width: 7px;
+        margin: 0 1px;
+        background-color: #bbbbbb;
+        border: none;  
+        border-radius: 50%;
+        display: inline-block;
+        opacity: 0.5;
+    }
+  
+    .step.active {
+        opacity: 1;
+    }
+  
+    /* Mark the steps that are finished and valid: */
+    .step.finish {
+        background-color: #A2936F;
+    }
+
+    #regForm {
+   
+        width: 85%;
+        padding: 0;
+       
+    }
+
+    span {
+        font-size: 11px;
+    }
+
+    .user-input-wrp input:focus ~ .floating-label,
+    .user-input-wrp input:not(:focus):valid ~ .floating-label{
+        font-size: 8px !important;
+    }
+}
+
+#rolexmodel {
+    display: none;
+}
+
+#tudormodel {
+    display: none;
+}
+
+#gmt-master-ii {
+    display: none;
+}
+
+
+#air-king {
+    display: none;
+}
+
+#datejust {
+    display: none;
+}
+
+#img-logo {
+    width: 35%;
+}
+
+#img-logo {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    margin-bottom: 3em;
+}
+
+#referral {
+    display: none;
+}
+
+
+/* //////////////////////////////////////////////////// */
+
+.user-input-wrp {
+	position: relative;
+	width: 100%;
+    color: #594545;    
+}
+.user-input-wrp .inputText{
+	width: 100%;
+	outline: none;
+	border:none;
+	border-bottom: 1px solid #ababab;
+ 	box-shadow: none !important;
+    
+}
+.user-input-wrp .inputText:focus{
+	border-color: #A2936F;
+	border-width: medium medium 2px;
+}
+.user-input-wrp .floating-label {
+	position: absolute;
+	pointer-events: none;
+	top: 40px;
+	left: 5px;
+	transition: 0.2s ease all;
+    opacity: .7;
+}
+.user-input-wrp input:focus ~ .floating-label,
+.user-input-wrp input:not(:focus):valid ~ .floating-label{
+	top: 15px;
+	left: 5px;
+	font-size: 11px;
+	opacity: .5;
+}
