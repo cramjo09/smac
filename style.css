@@ -12,7 +12,7 @@ body {
   margin: 40px auto;
   font-family: Raleway;
   padding: 40px;
-  width:90%;
+  width: 85%;
  
 }
 
@@ -29,20 +29,13 @@ h4 {
     color: #594545;
 }
 
-.spanning {
-    padding: 10px;
-    margin: 5px 10px;
-    font-size: 17px;
-    font-family: Raleway;
-}
-
 p.businessCard {
     margin-top: 2em !important;
 }
 
 input {
   padding: 10px;
-  margin: 5px 10px;
+  /* margin: 5px 10px; */
   font-size: 17px;
   font-family: Raleway;
   border: 1px solid #aaaaaa;
@@ -50,16 +43,22 @@ input {
 
 select {
     padding: 10px;
-    margin: 5px 10px;
+    /* margin: 5px 10px; */
     width: 100%;
-    font-size: 17px;
+    font-size: 15px;
     font-family: Raleway;
     border: 1px solid #aaaaaa;
+    opacity: .7;
+}
+
+label {
+    font-size: 15px;
 }
 
 
 .form-control {
     width: 100% !important;
+    font-size: 15px;
 }
 
 .form-control:focus {
@@ -73,6 +72,7 @@ select {
 
 .inputRadioFont {
     padding-left: 20px;
+    font-size: 15px;
 }
 
 /* Mark input boxes that gets an error on validation: */
@@ -181,15 +181,15 @@ button:hover {
 
 @media only screen and (max-width: 500px) {
     input {
-        font-size: 13px !important;
+        font-size: 11px !important;
     }
 
     select {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     label {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .inputRadioFont {
@@ -231,23 +231,20 @@ button:hover {
     }
 
     #regForm {
-        text-align: center;
+   
+        width: 100%;
+        padding: 0;
        
-      }
-
-
-
-
-      /* ---------------------------------- */
-
-    /* .user-input-wrp {
-        width: 100%;
-        margin: 0;
     }
-    .inputText {
-        width: 100%;
-    } */
-  
+
+    span {
+        font-size: 11px;
+    }
+
+    .user-input-wrp input:focus ~ .floating-label,
+    .user-input-wrp input:not(:focus):valid ~ .floating-label{
+        font-size: 8px !important;
+    }
 }
 
 #rolexmodel {
@@ -291,7 +288,7 @@ button:hover {
 .user-input-wrp {
 	position: relative;
 	width: 100%;
-    color: #594545
+    color: #594545;    
 }
 .user-input-wrp .inputText{
 	width: 100%;
@@ -299,6 +296,7 @@ button:hover {
 	border:none;
 	border-bottom: 1px solid #ababab;
  	box-shadow: none !important;
+    
 }
 .user-input-wrp .inputText:focus{
 	border-color: #A2936F;
@@ -307,14 +305,15 @@ button:hover {
 .user-input-wrp .floating-label {
 	position: absolute;
 	pointer-events: none;
-	top: 50px;
-	left: 10px;
+	top: 40px;
+	left: 5px;
 	transition: 0.2s ease all;
+    opacity: .7;
 }
 .user-input-wrp input:focus ~ .floating-label,
 .user-input-wrp input:not(:focus):valid ~ .floating-label{
-	top: 20px;
-	left: 10px;
-	font-size: 13px;
-	opacity: 1;
+	top: 15px;
+	left: 5px;
+	font-size: 11px;
+	opacity: .5;
 }
