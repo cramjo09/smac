@@ -1,0 +1,17 @@
+
+
+{
+
+    "data" : [
+        {
+            "firstname" : "john",
+            "lastname" : "doe"
+        },
+        {
+            "firstname" : "peter",
+            "lastname" : "griffin"
+        }
+
+    ]
+
+}
